@@ -50,6 +50,7 @@ repo_url = "https://github.com/lingrui-studio/noob_guide"
 nav = [
   { "首页" = "index.md" },
   { "基本素养" = "basic.md" },
+  { "电脑小白扫盲" = "computer.md" },
   { "招新安排" = "plan.md" },
   { "Get started" = "start.md" },
   { "Markdown in 5min" = "markdown.md" },
