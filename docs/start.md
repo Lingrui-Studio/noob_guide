@@ -8,9 +8,9 @@ For full documentation visit [zensical.org](https://zensical.org/docs/).
 
 ## Commands
 
-* [`zensical new`][new] - Create a new project
-* [`zensical serve`][serve] - Start local web server
-* [`zensical build`][build] - Build your site
+* [`uv run zensical new`][new] - Create a new project
+* [`uv run zensical serve`][serve] - Start local web server
+* [`uv run zensical build`][build] - Build your site
 
   [new]: https://zensical.org/docs/usage/new/
   [serve]: https://zensical.org/docs/usage/preview/
@@ -94,7 +94,6 @@ Here's a sentence with a footnote.[^1]
 Hover it, to see a tooltip.
 
 [^1]: This is the footnote.
-
 
 ## Formatting
 
