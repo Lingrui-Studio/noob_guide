@@ -48,13 +48,15 @@ repo_url = "https://github.com/lingrui-studio/noob_guide"
 #
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
-  { "首页" = "index.md" },
-  { "基本素养" = "basic.md" },
-  { "电脑小白扫盲" = "computer.md" },
-  { "沙河生存指南" = "survival.md" },
-  { "招新安排" = "plan.md" },
-  { "Get started" = "start.md" },
-  { "Markdown in 5min" = "markdown.md" },
+    { "新人指南" = [
+        { "首页" = "index.md" },
+        { "基本素养" = "basic.md" },
+        { "电脑小白扫盲" = "computer.md" },
+        { "沙河生存指南" = "survival.md" },
+        { "招新安排" = "plan.md" },
+        { "Get started" = "start.md" },
+        { "Markdown in 5min" = "markdown.md" },
+    ] },
 ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
@@ -101,7 +103,7 @@ nav = [
 # - https://zensical.org/docs/setup/logo-and-icons/#favicon
 # - https://developer.mozilla.org/en-US/docs/Glossary/Favicon
 #
-#favicon = "images/favicon.png"
+favicon = "img/lrlogo.png"
 
 # Zensical supports more than 60 different languages. This means that the
 # labels and tooltips that Zensical's templates produce are translated.
@@ -223,12 +225,12 @@ features = [
     # When tabs are enabled, top-level sections are rendered in a menu layer
     # below the header for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-tabs
-    #"navigation.tabs",
+    "navigation.tabs",
 
     # When sticky tabs are enabled, navigation tabs will lock below the header
     # and always remain visible when scrolling down.
     # https://zensical.org/docs/setup/navigation/#sticky-navigation-tabs
-    #"navigation.tabs.sticky",
+    # "navigation.tabs.sticky",
 
     # A back-to-top button can be shown when the user, after scrolling down,
     # starts to scroll up again.
@@ -348,7 +350,7 @@ pygments_lang_class = true
 [project.markdown_extensions.pymdownx.smartsymbols]
 [project.markdown_extensions.pymdownx.superfences]
 custom_fences = [
-  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+    { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
 ]
 [project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true
