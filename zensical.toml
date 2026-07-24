@@ -57,7 +57,9 @@ nav = [
         { "沙河生存指南" = "survival.md" },
         { "招新安排" = "plan.md" },
         { "Get started" = "start.md" },
-        { "Markdown in 5min" = "markdown.md" },
+    ] },
+    { "夏令营" = [
+        { "Markdown" = "summer_camp/markdown.md" },
     ] },
 ]
 
