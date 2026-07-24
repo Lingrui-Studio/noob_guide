@@ -92,6 +92,7 @@ icon: lucide/info
 ## 新生来到 UESTC 软件学院必须知道的网站
 
 - [Learning-In-UESTC](https://github.com/Fux-i/Learning-In-UESTC)：软院学习资料，包含教材、课后答案、实验报告、课程代码、历年真题等。
-- [River Side](https://river-side.cc/invites/GYV6kFPYRo)：学校新论坛（老论坛清水河畔禁止毕业生访问了，以后会慢慢衰落的）
+- [清水河畔](https://bbs.uestc.edu.cn/new)：学校官方论坛（毕业生无法登录，见下方新论坛）
+- [River Side](https://river-side.cc/invites/GYV6kFPYRo)：学校新论坛
 - [学生邮箱](http://mail.std.uestc.edu.cn/)：可以领取很多学生优惠
 - [软院官网](https://sise.uestc.edu.cn/)：官方通知与新闻
