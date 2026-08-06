@@ -60,6 +60,7 @@ nav = [
     ] },
     { "夏令营" = [
         { "Markdown" = "summer_camp/markdown.md" },
+        { "IDE" = "summer_camp/ide.md" },
     ] },
 ]
 
