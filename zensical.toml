@@ -60,6 +60,8 @@ nav = [
     ] },
     { "夏令营" = [
         { "Markdown" = "summer_camp/markdown.md" },
+        { "初识 Linux" = "summer_camp/linux.md" },
+        { "入门 Linux" = "summer_camp/linux_commands.md" },
         { "IDE" = "summer_camp/ide.md" },
     ] },
 ]
