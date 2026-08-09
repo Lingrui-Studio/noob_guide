@@ -220,15 +220,19 @@ man ls       # 完整手册，按 q 退出
 ls --help    # 快速帮助
 ```
 
+若你觉得`man`太啰嗦，也可以用 [tldr](https://tldr.sh/)。
+
+也有在线查询 [explainshell.com](https://explainshell.com/) 上查询。
+
 报错看不懂，把报错原文复制去搜，关键词带上系统版本和命令名，比如 `Ubuntu 24.04 apt permission denied`，别只搜「apt 报错」。
 
 ## 拓展阅读
 
+想要更详细的 Linux 教程？请看 [Linux 101 - USTC](https://101.lug.ustc.edu.cn/)，以及：
+
 - [Linux 教程 - 菜鸟教程](https://www.runoob.com/linux/linux-tutorial.html)：中文入门，命令速查方便
 - [Linux Journey](https://linuxjourney.com/)：英文循序渐进，从命令行到 shell 脚本
 - [The Linux Command Line](https://linuxcommand.org/tlcl.php)（官方免费 PDF）：很多人入门命令行从这本开始
-- [explainshell.com](https://explainshell.com/)：把一条命令逐词拆开解释，看不懂组合命令时用
-- [tldr pages](https://tldr.sh/)：嫌 `man` 啰嗦就用它，给常用命令的极简示例
 - [Ubuntu 官方文档](https://help.ubuntu.com/)：系统问题的第一手资料
 - [Arch Wiki](https://wiki.archlinux.org/)：讲原理最清楚，虽然是 Arch 的 wiki，全发行版通用
 - [计算机教育中缺失的一课](https://missing-semester-cn.github.io/)：MIT - 计算机缺失的一科
