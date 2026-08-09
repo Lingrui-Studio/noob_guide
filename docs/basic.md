@@ -96,3 +96,5 @@ icon: lucide/info
 - [River Side](https://river-side.cc/invites/GYV6kFPYRo)：学校新论坛
 - [学生邮箱](http://mail.std.uestc.edu.cn/)：可以领取很多学生优惠
 - [软院官网](https://sise.uestc.edu.cn/)：官方通知与新闻
+- [云中成电](https://online.uestc.edu.cn)：学校官方提供的各种服务
+- [校园 VPN](https://vpn.uestc.edu.cn/)：用于在校外访问限制校内访问的网站
