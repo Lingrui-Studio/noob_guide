@@ -114,6 +114,62 @@ Windows 和 macOS 为我们提供了精美的图形界面和“开箱即用”�
 
     对于发行版的选择，**Ubuntu** 依然是新手的最佳选择（推荐选择最新的长期支持版本，如 Ubuntu 26.04 LTS），它们拥有庞大的社区和丰富的文档。当你更加熟练后，可以去挑战 **NixOS**、**Fedora**、**Arch Linux** 等，它们会让你对系统有更深层次的理解。
 
+有了 Linux 系统之后，便要自己动手操作一番体验一下了，这里推荐使用 **VS Code**。怎么用？两种姿势，任选其一：
+
+=== "姿势一：VS Code 远程连接（推荐）"
+
+    代码、终端、界面全都在本机 VS Code 里，体验最舒服；文件直接存在 Linux 里，本机与 Linux 两边都能用。WSL 和虚拟机 / 远程 Linux 机器都适用。
+
+    **1. 连接 WSL（Windows 用户）**
+
+    1. 在 VS Code 扩展市场安装 **WSL** 扩展（`ms-vscode-remote.remote-wsl`）。
+    2. 点左下角绿色按钮（`><`），选择 **Connect to WSL**。
+    3. VS Code 会重新打开一个窗口并自动接入 WSL，下方终端里直接就是 Linux 环境，`pwd` 敲一下就能确认。
+
+    **2. 通过 SSH 连接虚拟机 / 远程 Linux 机器**
+
+    1. 先在 Linux 里装好并启动 SSH 服务：
+        ```bash
+        sudo apt update && sudo apt install -y openssh-server
+        sudo systemctl enable --now ssh
+        ```
+    2. 在 Linux 终端里用 `ip addr`（或 `ip a`）查一下它的 IP 地址，形如 `192.168.x.x`。
+    3. 在 VS Code 安装 **Remote - SSH** 扩展（`ms-vscode-remote.remote-ssh`）。
+    4. 点左下角绿色按钮 → **Connect to Host...** → 输入 `用户名@IP`（例如 `student@192.168.1.100`）→ 回车，输入密码就连上了。
+    5. 想免密的话，可以后续再配置 SSH 密钥，这里先不展开，能连上就够用了。
+
+    **参考链接：**
+
+    * [VS Code 官方：使用 WSL 进行远程开发](https://code.visualstudio.com/docs/remote/wsl)
+    * [VS Code 官方：SSH 远程开发](https://code.visualstudio.com/docs/remote/ssh)
+    * [VS Code 官方：SSH 连接教程（手把手演示）](https://code.visualstudio.com/docs/remote/ssh-tutorial)
+
+=== "姿势二：在 Linux 图形界面里直接装 VS Code"
+
+    直接在虚拟机的图形桌面上装一个 VS Code，打开就像 Windows 里一样用，适合想完整体验 Linux 桌面环境的同学。
+
+    **Ubuntu 系（推荐）：**
+
+    1. 打开 VS Code 官网 [https://code.visualstudio.com](https://code.visualstudio.com/) 下载 **.deb** 安装包。
+    2. 在终端里进入下载目录并安装：
+        ```bash
+        sudo apt install ./code_*.deb
+        ```
+    3. 装好后在应用菜单里搜索 **Visual Studio Code** 启动即可。
+    4. 首次使用建议在扩展市场装 **中文（简体）语言包**（`ms-ceintl.vscode-language-pack-zh-hans`），界面就切换成中文了。
+
+    !!! tip "其他安装方式"
+        也可以用 Snap 一键安装：`sudo snap install code --classic`。想跟随官方源自动更新的同学，可以参考下方链接里的 apt 仓库安装方式。
+
+    **参考链接：**
+
+    * [VS Code 官方：在 Linux 上安装](https://code.visualstudio.com/docs/setup/linux)
+    * [VS Code 官方：中文语言包](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans)
+
+!!! tip "在 VS Code 中使用终端（shell）"
+
+    你可以在 VS Code 左上方找到 **Terminal**（终端）-> **New Terminal**（新建终端）打开，或使用快捷键：++shift+esc++ 快速切换。
+
 ## 结语
 
 学习 Linux，你得到的绝不仅仅是简历上的一行技能。你将获得一种更接近计算机本质的视角，一种解决问题的思维方式，以及一把能打开无数前沿技术大门的钥匙。
