@@ -56,7 +56,7 @@ nav = [
         { "电脑小白扫盲" = "computer.md" },
         { "沙河生存指南" = "survival.md" },
         { "招新安排" = "plan.md" },
-        { "Get started" = "start.md" },
+        # { "Get started" = "start.md" },
     ] },
     { "夏令营" = [
         { "Markdown" = "summer_camp/markdown.md" },
