@@ -88,7 +88,7 @@ Windows 和 macOS 为我们提供了精美的图形界面和“开箱即用”�
 
 === "虚拟机 (Virtual Machine)"
 
-    这是最推荐的入门方式。使用 VirtualBox 或 VMware，你可以在当前的 Windows 或 macOS 系统中，像运行一个普通软件一样运行一个完整的 Linux 系统。安全、隔离，可以随意“折腾”坏了也不怕。
+    使用 VirtualBox 或 VMware，你可以在当前的 Windows 或 macOS 系统中，像运行一个普通软件一样运行一个完整的 Linux 系统。安全、隔离，可以随意“折腾”坏了也不怕。
 
     **任选一个虚拟机软件，跟着对应教程做即可：**
 
@@ -112,7 +112,7 @@ Windows 和 macOS 为我们提供了精美的图形界面和“开箱即用”�
 
 !!! tip "发行版选择建议"
 
-    对于发行版的选择，**Ubuntu** 依然是新手的最佳选择（推荐选择最新的长期支持版本，如 Ubuntu 26.04 LTS），它们拥有庞大的社区和丰富的文档。当你更加熟练后，可以去挑战 **NixOS**、**Fedora**、**Arch Linux** 等，它们会让你对系统有更深层次的理解。
+    对于发行版的选择，**Ubuntu** 依然是新手的最佳选择（推荐选择最新的长期支持版本，如 Ubuntu 26.04 LTS），它们拥有庞大的社区和丰富的文档。当你更加熟练后，可以去挑战 **Arch**、**NixOS** 等，它们会让你对系统有更深层次的理解。
 
 有了 Linux 系统之后，便要自己动手操作一番体验一下了，这里推荐使用 **VS Code**。怎么用？两种姿势，任选其一：
 
@@ -136,7 +136,7 @@ Windows 和 macOS 为我们提供了精美的图形界面和“开箱即用”�
     2. 在 Linux 终端里用 `ip addr`（或 `ip a`）查一下它的 IP 地址，形如 `192.168.x.x`。
     3. 在 VS Code 安装 **Remote - SSH** 扩展（`ms-vscode-remote.remote-ssh`）。
     4. 点左下角绿色按钮 → **Connect to Host...** → 输入 `用户名@IP`（例如 `student@192.168.1.100`）→ 回车，输入密码就连上了。
-    5. 想免密的话，可以后续再配置 SSH 密钥，这里先不展开，能连上就够用了。
+    5. 想免密的话，可以后续再配置 SSH 密钥。
 
     **参考链接：**
 
@@ -166,7 +166,7 @@ Windows 和 macOS 为我们提供了精美的图形界面和“开箱即用”�
     * [VS Code 官方：在 Linux 上安装](https://code.visualstudio.com/docs/setup/linux)
     * [VS Code 官方：中文语言包](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans)
 
-!!! tip "在 VS Code 中使用终端（shell）"
+!!! tip "在 VS Code 中使用终端"
 
     你可以在 VS Code 左上方找到 **Terminal**（终端）-> **New Terminal**（新建终端）打开，或使用快捷键：++shift+esc++ 快速切换。
 

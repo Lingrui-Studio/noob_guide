@@ -59,10 +59,10 @@ nav = [
         # { "Get started" = "start.md" },
     ] },
     { "夏令营" = [
+        { "IDE" = "summer_camp/ide.md" },
         { "Markdown" = "summer_camp/markdown.md" },
         { "初识 Linux" = "summer_camp/linux.md" },
         { "入门 Linux" = "summer_camp/linux_commands.md" },
-        { "IDE" = "summer_camp/ide.md" },
     ] },
 ]
 

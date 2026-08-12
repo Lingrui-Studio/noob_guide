@@ -1,12 +1,18 @@
 # 入门 Linux
 
-在上一节中，我们已经介绍了 Linux 的重要性和学习它的理由，并且推荐了 VS Code 作为主要的开发工具。这一节我们开始介绍 Linux 常用的各种命令，跟着下面的顺序一步步来：先认识终端长什么样，再搞清楚「我在哪、这里有什么、怎么走」，然后开始建文件、看文件、装软件。每步只讲够用的。
+在上一节中，我们已经介绍了 Linux 的重要性和学习它的理由，并且推荐了 VS Code 作为主要的开发工具。这一节我们开始介绍 Linux 常用的各种命令，跟着下面的顺序一步步来：先认识终端长什么样，再搞清楚「我在哪、这里有什么、怎么走」，然后开始建文件、看文件、装软件。
+
+这里有个交互式的教程网站，推荐大家前往体验
+
+- [Beginners](https://webterm.app/en/tutorials/beginner)
+- [Fundamentals](https://webterm.app/en/tutorials/basic)
+- [Advanced](https://webterm.app/en/tutorials/advanced)
 
 ## 先认识终端
 
 终端（Terminal）就是给你敲命令的地方。VS Code 里按 ++shift+esc++，或菜单 **Terminal → New Terminal** 打开；在 Linux 桌面上找 Terminal 图标也行。
 
-打开后你会看到一行类似这样的字：
+打开后你会看到一行类似这样的字（本文以 Ubuntu 为例）：
 
 ```bash
 student@ubuntu:~$
@@ -117,6 +123,54 @@ tail -n 20 xxx.log  # 只看末尾 20 行，看日志最常用
 !!! tip "在一堆输出里找关键词"
     用管道 `|` 把上一条命令的输出喂给下一条：`cat xxx.log | grep error`，只留下含 `error` 的行。排查问题靠这一条能省很多时间。
 
+## 管道与重定向：|、<、>、>>、<<
+
+Linux 命令通常从键盘读取输入，再把结果打印到终端。管道和重定向可以改变数据的去向：让一个命令接着处理另一个命令的结果，或者在命令和文件之间传递内容。
+
+**管道 `|`：把左边的输出交给右边**
+
+```bash
+ls -la | less                 # 文件太多，交给 less 分页查看
+grep error xxx.log | tail -n 20  # 找出 error，再只看最后 20 条
+```
+
+一条命令处理不完，就用 `|` 串起来。数据从左往右流，每个命令只负责一步。
+
+**输出重定向 `>` 和 `>>`：把结果写进文件**
+
+```bash
+echo "hello" > hello.txt     # 写入文件；文件原有内容会被覆盖
+echo "world" >> hello.txt    # 追加到文件末尾，不会覆盖原内容
+ls -la > files.txt            # 把 ls 的结果保存下来
+```
+
+!!! warning "用 > 前先看清文件名"
+    `>` 会直接覆盖目标文件。想保留原内容就用 `>>`，重要文件操作前可以先 `cat` 一眼。
+
+**输入重定向 `<`：让命令从文件读取输入**
+
+```bash
+wc -l < hello.txt             # 统计 hello.txt 有多少行
+sort < names.txt              # 读取 names.txt，排序结果仍打印到终端
+sort < names.txt > sorted.txt # 从文件读，排序后写入另一个文件
+```
+
+**多行输入 `<<`：临时输入一整段内容**
+
+`<<` 后面跟一个自定义的结束标记，常用 `EOF`。Shell 会持续读取，直到再次遇到这个标记：
+
+```bash
+cat << EOF
+第一行
+第二行
+EOF
+```
+
+上面的 `cat` 会收到两行文本并打印出来。`EOF` 不是固定写法，换成 `END` 等其他单词也可以，只要开头和结尾一致。
+
+!!! tip "记法"
+    `|` 是命令接命令；尖括号朝哪边，数据就大致往哪边走。`>` 写入，`>>` 追加，`<` 读取，`<<` 输入多行。
+
 ## 装软件：sudo 和 apt
 
 Ubuntu 这类发行版用 apt 装软件，一条命令搞定：
@@ -191,10 +245,9 @@ vim 和普通编辑器最大的区别是**有模式**。刚打开是**命令模�
 最常见的场景：SSH 连上服务器跑个任务，窗口一关任务就断了。用 tmux 跑，窗口随便关，任务照常继续，下次连上 `tmux a` 就回来了。
 
 ```bash
-sudo apt install tmux   # 装
+sudo apt install tmux   # 安装
 tmux                    # 新建会话
-tmux new -s work        # 新建会话并起名 work
-tmux a -t work     # 重新连上 work
+tmux a                  # 重新连上之前的会话
 tmux ls                 # 看当前有哪些会话
 ```
 
@@ -208,8 +261,8 @@ tmux 里所有操作都靠前缀键 ++ctrl+b++，**按完再按**功能键：
 - ++space++：切换分屏布局
 - ++comma++：给窗口重命名
 
-!!! tip "记住这个循环就行"
-    `tmux new -s work` 开一个 → 干活 → ++ctrl+b++ → ++d++ 脱离 → 下次 `tmux a -t work` 回来。这一个循环覆盖了日常九成用法。
+!!! info "Cheatsheet"
+    [tmux Cheat Sheet: All Key Bindings & Commands - Terminal Guide](https://www.terminal.guide/tools/multiplexer/tmux/cheatsheet/)
 
 ## 不会用怎么办：man 和 --help
 
@@ -222,17 +275,12 @@ ls --help    # 快速帮助
 
 若你觉得`man`太啰嗦，也可以用 [tldr](https://tldr.sh/)。
 
-也有在线查询 [explainshell.com](https://explainshell.com/) 上查询。
-
-报错看不懂，把报错原文复制去搜，关键词带上系统版本和命令名，比如 `Ubuntu 24.04 apt permission denied`，别只搜「apt 报错」。
+也有在线查询 [explainshell.com](https://explainshell.com/) 可以用。
 
 ## 拓展阅读
 
-想要更详细的 Linux 教程？请看 [Linux 101 - USTC](https://101.lug.ustc.edu.cn/)，以及：
+想要更详细的 Linux 教程？请看中科大出品的 [Linux 101 - USTC](https://101.lug.ustc.edu.cn/)，以及：
 
 - [Linux 教程 - 菜鸟教程](https://www.runoob.com/linux/linux-tutorial.html)：中文入门，命令速查方便
-- [Linux Journey](https://linuxjourney.com/)：英文循序渐进，从命令行到 shell 脚本
-- [The Linux Command Line](https://linuxcommand.org/tlcl.php)（官方免费 PDF）：很多人入门命令行从这本开始
-- [Ubuntu 官方文档](https://help.ubuntu.com/)：系统问题的第一手资料
-- [Arch Wiki](https://wiki.archlinux.org/)：讲原理最清楚，虽然是 Arch 的 wiki，全发行版通用
-- [计算机教育中缺失的一课](https://missing-semester-cn.github.io/)：MIT - 计算机缺失的一科
+- [Linux Commands Reference - Terminal Guide](https://www.terminal.guide/linux/commands/)：布局更加好看的 Linux 命令手册
+- [计算机教育中缺失的一课](https://missing-semester-cn.github.io/)：MIT - 计算机教育中缺失的一课
