@@ -1,7 +1,7 @@
 # 认知偏差
 
 1. 摒弃高中思维，别把课堂看得太重。在计算机领域，全世界**绝大部分**高校的**绝大部分**课程都是**垃圾课程**。推荐阅读：
-    - [上海交通大学生存指南](https://survivesjtu.gitbook.io/survivesjtumanual)
+    - [上海交通大学生存指南](https://survivesjtu.gitbook.io/survivesjtumanual/li-zhi-pian/huan-ying-lai-dao-shang-hai-jiao-tong-da-xue)
     - [在南京大学的四年 - 软件工程与纸上谈兵](https://blog.lyc8503.net/post/4-years-at-nju/)
 2. 计算机世界远比你想象中的要开阔；学习资源远比你想象中更容易获得。推荐阅读：
     - [CS 自学指南](https://csdiy.wiki/)
