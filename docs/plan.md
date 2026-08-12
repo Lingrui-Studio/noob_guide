@@ -42,6 +42,31 @@
 
 > 实际上，大多数情况下工作室之间的关系是虽有竞争但大体友好的，且相互之间也都有非常相熟的成员时常一起交流。
 
+## 我可以在做招新题时使用 AI 吗？
+
+现如今已是 AI 时代了，各大模型不断进化，没有哪家的哪款模型可以一直保持领先地位，暂时还看不到能力边界；各种 Harness 工具也是层出不穷：从最初的 copilot 到 cursor、从 mcp 到 skill、从 Claude Code 到 Opencode……
+
+AI 确实很强大，它可以帮你理解概念和查资料，但招新期间的编程实操题请先采用 [**古法编程**][hand programming] 把基础打牢。
+
+  [hand programming]: https://cn.bing.com/search?q=%E4%BB%80%E4%B9%88%E6%98%AF%E5%8F%A4%E6%B3%95%E7%BC%96%E7%A8%8B "不依赖 AI Agent 的传统编程方式，手动编写代码、调试和测试。"
+
+我们**要求**大家在**网页端**使用 AI，**禁止**直接让 AI 生成代码或整篇题解。写题解时请把对话链接（和其他参考资料）汇总附在最后，判题同学会进行审查。
+
+!!! warning "警告"
+    往年还是有些同学在提醒之后冒险使用“不属于自己的力量”，然而学长学姐使用 AI 的经验可比你多得多，哪些同学违规了其实一眼就能看出来，请不要抱有侥幸心理！此外，哪怕你可以用“不属于自己的力量”通过笔试，也多半会在面试时暴露并淘汰！
+
+对话连接（与参考资料）汇总示例如下，[markdown 格式][md]：
+
+  [md]: /summer_camp/markdown "你会在夏令营中学到"
+
+```markdown
+## 参考资料
+
+- [C 语言教程|菜鸟教程](https://www.runoob.com/cprogramming/c-tutorial.html)
+- [为什么 C 语言字符串变量的长度总是要 +1](https://qianwen.my.cn/share/chat/8376c88ba3fc48809f26e51aad9ea3a7)
+- [nixos 中的 home manager 推荐使用吗](https://qianwen.my.cn/share/chat/6ba2d99116674218be5bf294d72ad930)
+```
+
 ## 招新流程
 
 暂定！！！
