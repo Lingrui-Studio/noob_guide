@@ -63,7 +63,7 @@ nav = [
         { "Markdown" = "summer_camp/markdown.md" },
         { "初识 Linux" = "summer_camp/linux.md" },
         { "入门 Linux" = "summer_camp/linux_commands.md" },
-        { "Git 与 Github" = "summer_camp/git.md" },
+        { "Git 与 GitHub" = "summer_camp/git.md" },
     ] },
 ]
 
