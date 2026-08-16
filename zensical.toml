@@ -60,7 +60,7 @@ nav = [
         # { "Get started" = "start.md" },
     ] },
     { "经验分享" = [
-        { "我的大一" = "sharing/DX3906.md" },
+        { "我的大一 byDX3906" = "sharing/DX3906.md" },
     ] },
     { "夏令营" = [
         { "IDE" = "summer_camp/ide.md" },
