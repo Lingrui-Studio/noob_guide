@@ -61,6 +61,7 @@ nav = [
     ] },
     { "经验分享" = [
         { "我的大一 byDX3906" = "sharing/DX3906.md" },
+        { "Something About University" = "sharing/whynot.md" },
     ] },
     { "夏令营" = [
         { "IDE" = "summer_camp/ide.md" },
