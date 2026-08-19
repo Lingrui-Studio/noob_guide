@@ -54,7 +54,7 @@ icon: lucide/info
 
 ## 如何获取到“墙”外的信息
 
-众所周知，国内不能直接访问外网，但作为计算机相关专业的同学，有太多时候必须上外网了，比如 :fontawesome-brands-github: Gihub、HuggingFace、Tampermonkey、:fontawesome-brands-youtube: Youtube 等。
+众所周知，国内不能直接访问外网，但作为计算机相关专业的同学，有太多时候必须上外网了，比如 :fontawesome-brands-github: GitHub、HuggingFace、Tampermonkey、:fontawesome-brands-youtube: Youtube 等。
 
 相关内容较为敏感，不适合公开发表，但非常重要，本文中、招新过程中、你今后的大学生活中都会遇到大量需要翻墙的情况，请私聊咨询你的导生。
 
