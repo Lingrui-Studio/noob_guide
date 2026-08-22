@@ -125,7 +125,7 @@ int main(void) {
 #include <stdio.h>
 
 int main(void) {
-    printf("hello, 凌睿、n");
+    printf("hello, 凌睿\n");
     return 0;
 }
 ```
@@ -162,7 +162,7 @@ int main(void) {
     printf("year = %d\n", year);
     printf("grade = %c\n", grade);
     printf("pi = %f\n", pi);
-    printf("int 占 %zu 字节、n", sizeof(year));
+    printf("int 占 %zu 字节\n", sizeof(year));
     return 0;
 }
 ```
@@ -193,7 +193,7 @@ int main(void) {
 
     printf("输入一个整数：");
     if (scanf("%d", &n) != 1) {
-        printf("没读到整数、n");
+        printf("没读到整数\n");
         return 1;
     }
 
@@ -217,14 +217,14 @@ int main(void) {
 
     printf("输入分数：");
     if (scanf("%d", &score) != 1) {
-        printf("输入无效、n");
+        printf("输入无效\n");
         return 1;
     }
 
     if (score >= 60) {
-        printf("及格、n");
+        printf("及格\n");
     } else {
-        printf("不及格、n");
+        printf("不及格\n");
     }
     return 0;
 }
@@ -242,7 +242,7 @@ int main(void) {
 
     printf("输入分数：");
     if (scanf("%d", &score) != 1) {
-        printf("输入无效、n");
+        printf("输入无效\n");
         return 1;
     }
 
@@ -250,11 +250,11 @@ int main(void) {
         printf("分数应在 0 到 100\n");
         return 1;
     } else if (score >= 90) {
-        printf("优秀、n");
+        printf("优秀\n");
     } else if (score >= 60) {
-        printf("及格、n");
+        printf("及格\n");
     } else {
-        printf("不及格、n");
+        printf("不及格\n");
     }
     return 0;
 }
@@ -276,7 +276,7 @@ int main(void) {
 
     printf("输入 n：");
     if (scanf("%d", &n) != 1 || n < 1) {
-        printf("请输入正整数、n");
+        printf("请输入正整数\n");
         return 1;
     }
 
@@ -360,7 +360,7 @@ int main(void) {
 
     printf("输入名字（不要有空格）：");
     if (scanf("%15s", name) != 1) {
-        printf("没读到、n");
+        printf("没读到\n");
         return 1;
     }
 
@@ -384,14 +384,14 @@ int main(void) {
 
     printf("输入两个单词：");
     if (scanf("%15s%15s", a, b) != 2) {
-        printf("没读够、n");
+        printf("没读够\n");
         return 1;
     }
 
     if (strcmp(a, b) == 0) {
-        printf("这两个一样、n");
+        printf("这两个一样\n");
     } else {
-        printf("这两个不一样、n");
+        printf("这两个不一样\n");
     }
     return 0;
 }
@@ -455,7 +455,7 @@ int main(void) {
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-    printf("一共 %d 个参数、n", argc);
+    printf("一共 %d 个参数\n", argc);
     for (int i = 0; i < argc; i = i + 1) {
         printf("argv[%d] = %s\n", i, argv[i]);
     }
