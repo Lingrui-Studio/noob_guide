@@ -76,9 +76,9 @@
 ```javascript
 var KICKASSVERSION='2.0';var s = document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='https://hi.kickassapp.com/kickass.js';void(0);
 ```
-试试打开F12，输入这串指令，然后按下Enter，用方向键和空格键毁灭你的页面吧(x)
+试试在浏览器按F12打开控制台，在控制台输入这串指令，然后按下Enter，用方向键和空格键毁灭你的页面吧(x)
 
-（该代码源于[https://kickassapp.com/](https://kickassapp.com/)，并可以通过加入书签快速启动）
+（该代码源于[https://kickassapp.com/](https://kickassapp.com/)，通过该界面可以将其加入书签快速启动）
 
 ## 待补充……
 
