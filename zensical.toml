@@ -52,11 +52,13 @@ nav = [
     { "新人指南" = [
         { "首页" = "index.md" },
         { "基本素养" = "basic.md" },
+        { "招新安排" = "plan.md" },
+        { "招新方向介绍" = "directions.md" },
+        # { "招新平台" = "platform.md" },
         { "认知偏差" = "cognition.md" },
         { "效率提升" = "efficiency.md" },
         { "电脑小白扫盲" = "computer.md" },
         { "沙河生存指南" = "survival.md" },
-        { "招新安排" = "plan.md" },
         # { "Get started" = "start.md" },
     ] },
     { "经验分享" = [
