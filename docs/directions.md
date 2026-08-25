@@ -71,6 +71,15 @@
 
 就目前而言，前端还不能被AI取代。AI更多的是成为了我们前端的一个**工具**，用于快速完成整体结构的布局，以及完成部分重复工作。很多代码仍然需要人来进行核查，界面需要人来进行核对，漏洞需要人来进行测试。更重要的是，AI给前端提出了**更高的需求**。随着AI Agent的流行，让页面接入Agent的任务也被提出；流式传输AI思考过程，对AI特定的输出进行可视化等需求也自然产生。如果仅把AI写出的代码作为黑箱，那么**安全性**等问题也面临巨大考验。前端语言也因为其较高的**适配能力**参与到多种Agent的Harness工程之中，如Claude Code使用了大量的TypeScript代码。可以说，AI在减少了前端的任务之后，也提供了更大的考验。具有丰富制作经验的前端工程师仍然是比较稀缺的人才。
 
+**一些前端的奇怪小东西**
+
+```javascript
+var KICKASSVERSION='2.0';var s = document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='https://hi.kickassapp.com/kickass.js';void(0);
+```
+试试打开F12，输入这串指令，然后按下Enter，用方向键和空格键毁灭你的页面吧(x)
+
+（该代码源于[https://kickassapp.com/](https://kickassapp.com/)，并可以通过加入书签快速启动）
+
 ## 待补充……
 
 ## 其他
